@@ -1,0 +1,589 @@
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	font-family: 'PT Sans';
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+/*Flexible media*/
+article, aside, ditails, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+img {
+	width: 100%;
+	height: auto;
+}
+@font-face {
+	font-family: 'PT Sans';
+	src: url('../fonts/pt-sans_[allfont.ru].ttf');
+}
+.center {
+	max-width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+}
+h2 {
+	font-size: 32px;
+}
+h3 {
+	font-size: 20px;
+}
+
+			/*Цвета*/
+/*
+color: #ffaf32; - оранжевый
+color: #b3b3b3; - бледно-серый
+color: #00a2f5; - голубой
+*/
+			/*Параллакс*/
+.bg-parallax {	
+  	position: fixed;
+	background: url('../images/bg.jpg') no-repeat;
+	background-size: 100% auto;
+  	top:0;
+  	left:0;
+  	width: 100%;
+  	height: 300%;
+  	z-index: -1;
+}
+			/*Кпопка наверх*/
+.topWindow {
+	position: fixed;
+	display: none;
+	top: 60px;
+	left: 30px;
+	cursor: pointer;
+	z-index: 999;
+}
+.topWindow img {
+	width: 60px;
+	height: 60px;
+}
+			/*Header и Footer*/
+.h-f {
+	background: rgba(0, 0, 0, 0.7);
+}
+.h-f .center {
+	text-align: center;
+}
+.h-f .center:after {
+	content: '';
+	clear: both;
+	display: table;
+}
+.h-f .center div {
+	float: left;
+}
+.h-f .h-f-logo {
+	font-size: 38px;
+	font-weight: bold;
+	padding: 15px 17px 15px 8px;
+}
+.h-f .h-f-logo span:first-child {
+	color: #ffaf32;
+}
+.h-f .h-f-logo span:last-child {
+	color: #b3b3b3;
+	margin-left: 35px;
+	position: relative;
+}
+.h-f .h-f-logo span:last-child:before {
+	content: '';
+	width: 27px;
+	height: 44px;
+	background: url('../images/tel.png') no-repeat;
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: -30px;
+}
+.h-f .h-f-logo .hidden {
+	display: none;
+}
+
+.h-f .h-f-service {
+	font-size: 16px;
+	font-style: italic;
+	padding: 18px 17px;
+	color: #b3b3b3;
+	text-align: left;
+}
+
+.h-f .h-f-adress {
+	font-size: 16px;
+	font-style: italic;
+	padding: 8px 17px;
+	color: #fff;
+	text-align: center;
+}
+.h-f .h-f-adress span {
+	position: relative;
+}
+.h-f .h-f-adress span:before {
+	content: '';
+	width: 12px;
+	height: 20px;
+	background: url('../images/marker.png') no-repeat;
+	display: block;
+	position: absolute;
+	top: 20px;
+	left: -20px;
+}
+
+.h-f .h-f-tel {
+	padding: 10px 8px 10px 95px;
+}
+.h-f .h-f-tel span {
+	font-size: 24px;
+	color: #ffaf32;
+	position: relative;
+}
+.h-f .h-f-tel span:before {
+	content: '+7(707)';
+	font-size: 16px;
+	color: #fff;
+	position: absolute;
+	top: 8px;
+	left: -60px;
+}
+.h-f .h-f-tel span:first-child::after {
+	content: '';
+	width: 22px;
+	height: 29px;
+	background: url('../images/tube.png') no-repeat;
+	display: block;
+	position: absolute;
+	top: 15px;
+	left: -90px;
+}
+
+			/*Repair*/
+
+.repair figure {
+	display: inline-block;
+	width: 290px;
+	height: 320px;
+	color: #ffaf32;
+	font-size: 18px;
+	background: rgba(0, 0, 0, 0.7);
+}
+.repair .repair-box-1 {
+	margin: 25px 0 36px;
+}
+.repair .repair-box-2 {
+	margin: 25px 25px 36px;
+}
+.repair .repair-box-3 {
+	margin: 25px 0 36px;
+}
+.repair figure img {
+	margin: 20px 0 10px;
+}
+.repair span {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+			/*Форма*/
+form {
+	background: rgba(0, 0, 0, 0.7);
+	padding-top: 20px;
+}
+form h3 span:first-child {
+	color: #ffaf32;
+}
+form h3 span:last-child {
+	color: #fff;
+}
+form input {
+	height: 47px;
+	border: 0;
+	border-radius: 10px;
+	font-size: 18px;
+	margin: 20px 10px 40px;
+}
+form input[type='text'] {
+	width: 265px;
+	background: #e5e5e5;
+	font-style: italic;
+	color: #4b4b4b;
+	padding-left: 10px;
+}
+form input[type='submit'] {
+	width: 135px;
+	background-image: -webkit-linear-gradient(bottom, #ff9900 30%, #ffbb00 70%);
+	background-image: -moz-linear-gradient(bottom, #ff9900 30%, #ffbb00 70%);
+	background-image: -ms-linear-gradient(bottom, #ff9900 30%, #ffbb00 70%);
+	background-image: -o-linear-gradient(bottom, #ff9900 30%, #ffbb00 70%);
+	background-image: linear-gradient(bottom, #ff9900 30%, #ffbb00 70%);
+	color: #fff;
+	cursor: pointer;
+}
+form input[type='submit']:active {
+	background: #ff9900;
+	box-shadow: 0 0 1px 1px #76726d inset;
+}
+			/*Что мы делаем*/
+.works {
+	background: #f6f6f6;
+}
+.works .center {
+	content: '';
+	clear: both;
+	display: table;
+}
+.works figure {
+	display: inline-table;
+	width: 200px;
+	margin: 0 10px 10px;
+}
+.works .picture {
+	width: 160px;
+	height: 160px;
+	background: #ffaf32 url('../images/sprite1.png') no-repeat;
+	border-radius: 50%;
+	margin: 20px auto 10px;
+}
+.works .pic-1 {
+	background-position: 0 0;
+}
+.works .pic-2 {
+	background-position: -160px 0;
+}
+.works .pic-3 {
+	background-position: -320px 0;
+}
+.works span {
+	font-size: 18px;
+	color: #00a2f5;
+}
+.works p {
+	font-size: 16px;
+}
+.works button {
+	width: 325px;
+	height: 60px;
+	font-size: 24px;
+	background: #ffaf32;
+	color: #fff;
+	border: 3px solid #00a2f5;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+.works button:hover {
+	background: #00a2f5;
+}
+.works button:active {
+	background: #ffaf32;
+}
+.works .caption {
+	background-image: -webkit-linear-gradient(transparent 20px, #ffaf32 20px, #ffaf32 23px, transparent 23px);
+	background-image: -moz-linear-gradient(transparent 20px, #ffaf32 20px, #ffaf32 23px, transparent 23px);
+	background-image: -ms-linear-gradient(transparent 20px, #ffaf32 20px, #ffaf32 23px, transparent 23px);
+	background-image: -o-linear-gradient(transparent 20px, #ffaf32 20px, #ffaf32 23px, transparent 23px);
+	background-image: linear-gradient(transparent 20px, #ffaf32 20px, #ffaf32 23px, transparent 23px);
+}
+.works h2 {
+	display: inline-block;
+	color: #ffaf32;
+	background: #f6f6f6;
+	padding: 0 10px;
+}
+.works .service {
+	position: relative;
+	display: inline-block;
+	margin: 10px 35px;
+}
+.works .serv-2 {
+	top: -20px;
+}
+.works .serv-4 {
+	top: -20px;
+}
+.works .service span {
+	position: relative;
+	line-height: 30px;
+}
+.works .service span:before {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 40px;
+	height: 40px;
+	top: -5px;
+	left: -45px;
+	background: url('../images/sprite2.png') no-repeat;
+	background-position: 0 0;
+}
+.works .serv-2 span:before {
+	background-position: -40px 0;
+}
+.works .serv-3 span:before {
+	background-position: -80px -5px;
+}
+.works .serv-4 span:before {
+	background-position: -120px -5px;
+}
+.works .serv-5 span:before {
+	background-position: -160px 0;
+}
+			/*Слайдер*/
+.slider {
+	background: #fff;
+	border-bottom: 3px solid #ffaf32;
+}
+.slider .center {
+	position: relative;
+}
+.slider .slid-window {
+	position: relative;
+	max-width: 915px;
+	height: 150px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.slider .slid-window ul {
+	position: absolute;
+	top: 0;
+	left: 0;
+	list-style: none;
+}
+.slider .slid-window ul:after {
+	content: '';
+	clear: both;
+	display: table;
+}
+.slider .slid-window li {
+	float: left;
+	width: 183px;
+	height: 150px;
+}
+.slider .slid-window img {
+	width: auto;
+	height: 150px;
+}
+.slider .left-arrow {
+	position: absolute;
+	top: 15px;
+	left: 0;
+	width: 15px;
+	height: 120px;
+	background: -webkit-linear-gradient(to right bottom, transparent 14px, #ffaf32 14px, #ffaf32 16px, transparent 16px) no-repeat,
+					  -webkit-linear-gradient(to right top, transparent 14px, #ffaf32 14px, #ffaf32 16px, transparent 16px) no-repeat;
+	background: -moz-linear-gradient(to right bottom, transparent 14px, #ffaf32 14px, #ffaf32 16px, transparent 16px) no-repeat,
+					  -moz-linear-gradient(to right top, transparent 14px, #ffaf32 14px, #ffaf32 16px, transparent 16px) no-repeat;
+    background: -ms-linear-gradient(to right bottom, transparent 14px, #ffaf32 14px, #ffaf32 16px, transparent 16px) no-repeat,
+					  -ms-linear-gradient(to right top, transparent 14px, #ffaf32 14px, #ffaf32 16px, transparent 16px) no-repeat;
+	background: -o-linear-gradient(to right bottom, transparent 14px, #ffaf32 14px, #ffaf32 16px, transparent 16px) no-repeat,
+					  -o-linear-gradient(to right top, transparent 14px, #ffaf32 14px, #ffaf32 16px, transparent 16px) no-repeat;
+	background: linear-gradient(to right bottom, transparent 14px, #ffaf32 14px, #ffaf32 16px, transparent 16px) no-repeat,
+					  linear-gradient(to right top, transparent 14px, #ffaf32 14px, #ffaf32 16px, transparent 16px) no-repeat;				  
+	background-size: 15px 60px;
+	background-position: 0 0, 0 60px;
+}
+.slider .right-arrow {
+	position: absolute;
+	top: 15px;
+	right: 0;
+	width: 15px;
+	height: 120px;
+	background: linear-gradient(to left bottom, transparent 14px, #ffaf32 14px, #ffaf32 16px, transparent 16px) no-repeat,
+				linear-gradient(to left top, transparent 14px, #ffaf32 14px, #ffaf32 16px, transparent 16px) no-repeat;
+	background-size: 15px 60px;
+	background-position: 0 0, 0 60px;
+}
+.slider .left-arrow-end { /*Стиль добавляется на JQuery*/
+	position: absolute;
+	top: 15px;
+	left: 0;
+	width: 15px;
+	height: 120px;
+	background: linear-gradient(to right bottom, transparent 14px, #b3b3b3 14px, #b3b3b3 16px, transparent 16px) no-repeat,
+				linear-gradient(to right top, transparent 14px, #b3b3b3 14px, #b3b3b3 16px, transparent 16px) no-repeat;
+	background-size: 15px 60px;
+	background-position: 0 0, 0 60px;
+}
+			/*Преимущества*/
+.advantage .center {
+	padding-top: 10px;
+}
+.advantage {
+	background: url('../images/bg2.jpg') no-repeat;
+	background-position: 0 -170px;
+	background-size: cover;
+}
+.advantage h2 {
+	color: #ffaf32;
+	margin-bottom: 10px;
+}
+.advantage .item {
+	display: inline-block;
+	width: 235px;
+	height: 140px;
+	border: 3px solid #ffaf32;
+	border-radius: 10px;
+	background: rgba(0, 0, 0, .7);
+	margin: 16px;
+}
+.advantage .image {
+	width: 80px;
+	height: 80px;
+	background: url('../images/sprite4.png') no-repeat;
+	background-position: 0 0;
+	margin: 0 auto;
+}
+.advantage .img-2 {
+	background-position: -80px 0;
+}
+.advantage .img-3 {
+	background-position: -160px 0;
+}
+.advantage .img-4 {
+	background-position: -240px 0;
+}
+.advantage .img-5 {
+	background-position: -320px 0;
+}
+.advantage .img-6 {
+	background-position: -400px 0;
+}
+.advantage p {
+	font-size: 18px;
+	color: #ffaf32;
+}
+.advantage span {
+	font-size: 18px;
+	color: #00a2f5;
+}
+			/*Как мы работаем*/
+.way {
+	background: #f6f6f6;
+	min-height: 250px;
+	padding-top: 10px;
+	border-bottom: 3px solid #ffaf32;
+}
+.way .caption {
+	background-image: -webkit-linear-gradient(transparent 20px, #ffaf32 20px, #ffaf32 23px, transparent 23px);
+	background-image: -moz-linear-gradient(transparent 20px, #ffaf32 20px, #ffaf32 23px, transparent 23px);
+	background-image: -ms-linear-gradient(transparent 20px, #ffaf32 20px, #ffaf32 23px, transparent 23px);
+	background-image: -o-linear-gradient(transparent 20px, #ffaf32 20px, #ffaf32 23px, transparent 23px);
+	background-image: linear-gradient(transparent 20px, #ffaf32 20px, #ffaf32 23px, transparent 23px);
+}
+.way h2 {
+	display: inline-block;
+	color: #ffaf32;
+	background: #f6f6f6;
+	padding: 0 10px;
+}
+.way .item {
+	display: inline-block;
+	width: 110px;
+	margin: 20px 10px;
+}
+.way .image-way {
+	position: relative;
+	width: 80px;
+	height: 64px;
+	background: url('../images/sprite5.png') no-repeat;
+	background-position: 0 0;
+	margin: 5px auto;
+}
+.way .image-2 {
+	background-position: -80px 0;
+}
+.way .image-3 {
+	background-position: -160px 0;
+}
+.way .image-4 {
+	background-position: -240px 0;
+}
+.way .image-5 {
+	background-position: -320px 0;
+}
+.way .image-6 {
+	background-position: -400px 0;
+}
+.way .image-way:not(.image-6):after {
+	content: '';
+	position: absolute;
+	display: block;
+	top: 25px;
+	left: 80px;
+	width: 56px;
+	height: 12px;
+	background: url('../images/arrow.png') no-repeat;
+}
+.way p {
+	font-size: 18px;
+	color: #ffaf32;
+	line-height: 17px;
+}
+			/*Наши партнёры*/
+.partners {
+	background:url('../images/bg3.jpg') no-repeat;
+	background-size: cover;
+	border-bottom: 3px solid #ffaf32;
+}
+.partners .center {
+	padding-bottom: 25px;
+}
+.partners figure {
+	display: inline-block;
+	margin: 30px auto 10px;
+}
+.partners img {
+	max-width: 470px;
+	margin-top: 10px;
+}
+.partners figcaption {
+	font-size: 32px;
+	color: #ffaf32;
+}
+.partners h3 {
+	font-size: 24px;
+	color: #00a2f5;
+}
+.partners button {
+	font-size: 24px;
+	color: #fff;
+	width: 90%;
+	height: 60px;
+	background: #ffaf32;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.partners button:hover {
+	background: #00a2f5;
+}
+
+.partners button:active {
+	background: #ffaf32;
+}
+			/*Скупка*/
+.buying {
+	min-height: 480px;
+	background: url('../images/bg4.jpg') no-repeat;
+	background-size: cover;
+	background-position: 0 -100px;
+}
+.buying p {
+	font-size: 24px;
+	color: #ffaf32;
+}
+.buying span {
+	font-size: 24px;
+	color: #00a2f5;
+}
+.buying img {
+	max-width: 490px;
+	margin-top: 25px;
+}

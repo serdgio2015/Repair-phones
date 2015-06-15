@@ -1,0 +1,67 @@
+@media screen and (max-width: 1015px) {
+	.h-f .center div {
+		display: inline-block;
+		float: none;
+		width: auto;
+	}
+}
+
+@media screen and (max-width: 400px) {
+    .repair .repair-box-1 {
+		margin: 25px 0;
+	}
+	.repair .repair-box-2 {
+		margin: 25px 0;
+	}
+	.repair .repair-box-3 {
+		margin: 25px 0;
+	}
+	.works figure {
+		margin: 10px 0;
+	}
+	.works button {
+		width: 250px;
+	}
+	.slider {
+		display: none;
+	}
+	.way .item {
+		display: block;
+		margin: 20px auto;
+	}
+	.works .service {
+		margin: 20px auto;
+	}
+	.works .serv-2 {
+		top: 0;
+	}
+	.works .serv-4 {
+		top: 0;
+	}
+	.way .item {
+		margin: 80px auto;
+	}
+	.way .item:first-child {
+		margin: 20px auto 80px;
+	}
+	.way .item:last-child {
+		margin: 80px auto 20px;
+	}
+	.way .image-way:not(.image-6):after {
+		content: '';
+		position: absolute;
+		display: block;
+		top: 140px;
+		left: 10px;
+		width: 56px;
+		height: 12px;
+		background: url('../images/arrow.png') no-repeat;
+		transform: rotate(90deg);
+	}
+}
+
+@media screen and (max-width: 300px) {
+	.h-f .h-f-logo .hidden {
+		display: block;
+	}
+}
